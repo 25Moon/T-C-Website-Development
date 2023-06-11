@@ -1,0 +1,200 @@
+body {
+    background: #1a1a1a;
+    text-align: center;
+    min-height: 1300px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 140px 0 0 0;
+    padding: 0;
+    font-size: 2.3em;
+    color: #fff5d6;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: .09em;
+}
+
+.container {
+        /*transform: rotate(200deg);*/
+    height: 800px;
+    width: 780px;
+    border-radius: 50px;
+    border: 2px solid #fff5d6;
+    background: radial-gradient(#333, #000);
+}
+.btn {
+    margin: 40px 0;
+    text-align: center;
+    font-size: 1.2em;
+    /*text-shadow: 1px 1px 1px #555, -1px -1px 1px #555, -1px 1px 1px #555, 1px -1px 1px #555;*/
+    padding: 20px 16px;
+    line-height: 0;
+    border-radius: 30px;
+    color: #000;
+    border: none;
+    background: #28bbb8;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: .1em;
+}
+.btn:hover {
+    background: #fff5d6;
+}
+.s-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fff5d6;
+}
+.s-dot:hover {
+    background: #fff5d6;
+}
+.s-dot-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sun {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: #fff5d6;
+    position: absolute;
+    left: 47%;
+    margin-top: 110px;
+}
+.skys {
+    display: grid;
+    height: 800px;
+    position: absolute;
+    align-items: flex-end;
+}
+.sky1 {
+    width: 80px;
+    height: 200px;
+    background: #28bbb8;
+    left: 100px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+.sky-window {
+    background: #fff5d6;
+    height: 20px;
+    width: 20px;
+}
+.sky2 {
+    width: 80px;
+    height: 288px;
+    background: #28bbb8;
+    left: 200px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+.sky3 {
+    width: 80px;
+    height: 240px;
+    background: #28bbb8;
+    left: 280px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+.sky4 {
+    width: 80px;
+    height: 150px;
+    background: #28bbb8;
+    left: 380px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+.sky5 {
+    width: 80px;
+    height: 200px;
+    background: #28bbb8;
+    left: 460px;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    box-sizing: border-box;
+    justify-items: center;
+    align-items: center;
+}
+.boat {
+    width: 120px;
+    height: 250px;
+    background: transparent;
+    position: absolute;
+    left: 560px;
+    display: flex;
+}
+.boat-base {
+    align-self: flex-end;
+    width: 120px;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent 50%, #28bbb8 50%);
+    border-radius: 100%;
+    z-index: 1;
+}
+.boat-sail {
+    height: 110px;
+    width: 110px;
+    background: #fff5d6;
+    position: absolute;
+    clip-path: polygon(0 0, 50% 50%, 0 100% );
+    left: 40px;
+    top: 120px;
+}
+.boat-link {
+    display: flex;
+    height: 100%;
+}
+.boat-link:hover .boat-arrow, .boat-link:hover .boat-arrow-base {
+    background: #28bbb8;
+}
+.boat-arrow {
+    width: 30px;
+    height: 30px;
+    background: #000;
+    clip-path: polygon(0 0, 45% 50%, 0 100% );
+    align-self: center;
+    left: 30px;
+    position: absolute;
+}
+.boat-arrow-base {
+    width: 18px;
+    height: 10px;
+    background: #000;
+    align-self: center;
+    position: absolute;
+    left: 12px
+}
+:root {
+    --pop: #1a1a1a;
+}
