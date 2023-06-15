@@ -1,22 +1,18 @@
-const roll1= document.querySelector(".btn-r1");
-const roll2= document.querySelector(".btn-r2");
-const skip1= document.querySelector(".btn-s1");
-const skip2= document.querySelector(".btn-s2");
-let turn = 1;
-let output1 = 0;
-let output2 = 0;
-const p1RollsLeft = document.querySelector(".p1-rolls-left");
-const p2RollsLeft = document.querySelector(".p2-rolls-left");
-const outcome = document.querySelector(".outcome");
-let clicks1 = 3;
-let clicks2 = 3;
-let prev1 = document.querySelector(".dice1.p1");
-let prev2 = document.querySelector(".dice1.p2");
-let p1wins = 0;
-let p2wins = 0;
-const dicon = document.querySelector(".dicon")
+let pages = document.querySelectorAll('.s-dot-container a, .boat-link');
+let containers = document.querySelectorAll('.container1, .container2, .container3');
+let colorList = ['#28bbb8', '#c0b17b', '#eee'];
 
-setInterval( () => {
-    dicon.style("transform: rotate(90deg)")
-}, 2000)
+pages.forEach(page => {
+  page.addEventListener('click', function() {
+    let pageNumber = this.className[this.className.length -1]; // Get the page number from the class name
+    // Hide all containers
+    containers.forEach(container => {
+      container.classList.add('hide-me');
+    });
 
+    // Show the corresponding container
+    document.querySelector('.container' + pageNumber).classList.remove('hide-me');
+    document.querySelector('#svg').style.fill = colorList[pageNumber - 1];
+    document.querySelector('.container' + pageNumber + ' .page' + pageNumber + ' .s-dot').style.backgroundColor = '#fff5d6'
+  });
+});
