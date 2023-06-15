@@ -385,8 +385,8 @@ h3 {
     box-sizing: border-box;
 }
 .pg1 {
-    margin-top: 37vh;
     order: 1;
+    margin-top: 400px;
 }
 .pg2 {
     order: 3;
