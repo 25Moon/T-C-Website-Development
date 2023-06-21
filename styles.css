@@ -625,6 +625,24 @@ a.tb {
     position: absolute;
     left: 12px
 }
+
+@media (max-height: 920px) {
+    .container1, .container2, .container3, .skys, .clouds, .pages {
+        height: 800px;
+    }
+    .sun {
+        margin-top: 50px;
+    }
+    .pg1, .pg3 {
+        height: 280px;
+        bottom: -259px;
+    }
+    .pg2 {
+        height: 350px;
+        bottom: -224px;
+    }
+}
+
 :root {
     --mild: #fff5d6;
     --pop: #1a1a1a;
