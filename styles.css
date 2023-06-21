@@ -626,7 +626,7 @@ a.tb {
     left: 12px
 }
 
-@media (max-height: 920px) {
+@media (max-height: 980px) {
     .container1, .container2, .container3, .skys, .clouds, .pages {
         height: 800px;
     }
